@@ -7,33 +7,24 @@
     <title>Saiba se seu cartão foi clonado</title>
 </head>
 <body>
-
-    <h1>Olá, para saber se seu cartão foi clonado precisamos saber o número completo do seu cartão e também do seu cvv!</h1>
-
-    <p>Qual é o seu nome ?</p>
-    <input type="text" id="nome">
-
-    <p>Qual o número de seu CPF?</p>
-    <input type="text" id="CPF">
-
-    <p>Qual o número do seu cartão?</p>
-    <input type="text" id="CVV">
-
-    <p>Qual o número do cvv do seu cartão?</p>
-    <input type="text" id="cartão">
-
-    <p>Qual o seu endereço?</p>
-    <input type="text" id="end">
-
-    <p>Que horas não tem ninguém na sua casa?</p>
-    <input type="text" id="casa">
-
-    <p>Qual seu bem mais precioso?</p>
-    <input type="text" id="precioso">
-
-
-
-
+        <h1>Formulário de Cadastro</h1>
+        
+        <form action="/enviar" method="POST">
+            <p>Qual é o seu nome?</p>
+            <input type="text" id="nome" name="nome" required>
+    
+            <p>Qual o número do seu CPF?</p>
+            <input type="text" id="CPF" name="CPF" required>
+    
+            <p>Qual o seu endereço?</p>
+            <input type="text" id="end" name="endereco" required>
+    
+            <p>Qual o seu bem mais precioso?</p>
+            <input type="text" id="precioso" name="precioso">
+    
+            <button type="submit">Enviar</button>
+        </form>
+    
     <script src="main.js"></script>
 
 </body>
